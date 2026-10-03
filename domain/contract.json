@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "市场价格异常中止",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "企业申报员",
+    "核算专员",
+    "交易运营员",
+    "监管审计员"
+  ],
+  "states": [
+    "草稿",
+    "待核算",
+    "已确认",
+    "执行中",
+    "已封存"
+  ],
+  "invariants": [
+    "异常规则版本",
+    "市场状态屏障",
+    "撮合事务边界",
+    "分阶段恢复审计"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910033-005-A",
+      "actor": "企业申报员",
+      "state": "草稿"
+    },
+    {
+      "case_id": "0910033-005-B",
+      "actor": "监管审计员",
+      "state": "待核算"
+    }
+  ],
+  "tags": [
+    "market-halt",
+    "anomaly-control"
+  ]
+}
